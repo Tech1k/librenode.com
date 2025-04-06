@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /404
+
+Sitemap: https://librenode.com/sitemap.xml
