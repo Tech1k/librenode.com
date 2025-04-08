@@ -18,29 +18,42 @@
         <meta name="twitter:title" content="LibreNode - Contact"/>
         <meta name="twitter:description" content="Feel free to reach out to LibreNode if you have any issues or services that you'd like to see hosted."/>
 		<link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/navbar.css">
 	</head>
 	<body>
-		<div id="main">
-			<center id="title">
-				<a href="index.html" style="text-decoration: none">
-					<img src="assets/librenode.png" style="max-width: 100%;">
-				</a>
-                <a href="index.html" id="navlink">Home</a>
-                <a href="services.html" id="navlink">Services</a>
-                <a href="contact.html"id="navlink">Contact</a>
-                <a href="terms.html"id="navlink">Terms</a>
-                <a href="donate.html" id="navlink">Donate</a>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="assets/librenode.png" alt="Logo">
+            </a>
+
+            <!-- Very cheap method of getting this to work with css... -->
+            <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+
+            <!-- Hamburger icon -->
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" id="curpage">Contact</a>
+                <a href="terms.html">Terms</a>
+                <a href="donate.html">Donate</a>
                 <a href="https://status.librenode.com">Status</a>
-            </center>
-			<div>
-				<h2>Contact</h2>
-				<div>
-					<p>Feel free to reach out with any issues or suggestions for services that you'd like to see hosted.</p>
-                    <span>Email: <a href="mailto:librenode@protonmail.com">librenode@protonmail.com</a></span>
-                    <br/>
-                    <span>PGP: <a href="librenode.asc">A418 1FE4 DBC7 CA2C 8F95 8016 75F4 BEA3 7987 9CC5</a></span>
-					<br/>
-                </div>
+            </div>
+        </nav>
+		<div id="main">
+            <h1>Contact</h1>
+            <div>
+                <p>Feel free to reach out with any issues or suggestions for services that you'd like to see hosted.</p>
+                <span>Email: <a href="mailto:librenode@protonmail.com">librenode@protonmail.com</a></span>
+                <br/>
+                <span>PGP: <a href="librenode.asc">A418 1FE4 DBC7 CA2C 8F95 8016 75F4 BEA3 7987 9CC5</a></span>
+                <br/>
+            </div>
 		</div>
 	</body>
 </html>

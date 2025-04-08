@@ -19,24 +19,37 @@
         <meta name="twitter:title" content="LibreNode - Services"/>
         <meta name="twitter:description" content="This is a list of the services and tools that LibreNode provides."/>
 		<link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/navbar.css">
 	</head>
 	<body>
-		<div id="main">
-			<center id="title">
-				<a href="index.html" style="text-decoration: none">
-					<img src="assets/librenode.png" style="max-width: 100%;">
-				</a>
-                <a href="index.html" id="navlink">Home</a>
-                <a href="services.html" id="navlink">Services</a>
-                <a href="contact.html"id="navlink">Contact</a>
-                <a href="terms.html"id="navlink">Terms</a>
-                <a href="donate.html" id="navlink">Donate</a>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="assets/librenode.png" alt="Logo">
+            </a>
+
+            <!-- Very cheap method of getting this to work with css... -->
+            <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+
+            <!-- Hamburger icon -->
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html" id="curpage">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Terms</a>
+                <a href="donate.html">Donate</a>
                 <a href="https://status.librenode.com">Status</a>
-            </center>
-			<div>
-				<h2>Services</h2>
-				<div>
-        		<p>
+            </div>
+        </nav>
+		<div id="main">
+            <h1>Services</h1>
+            <div>
+                <p>
                     <ul>
                         <a href="https://redlib.librenode.com"><img src="assets/redlib.png" width="32px" style="margin-right: 3px; vertical-align: middle;">RedLib</a>
                         (<a href="http://redlib.gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion">Tor</a>)
@@ -97,7 +110,7 @@
                     </ul>
                     <br/>
                 </p>
-        	</div>
+            </div>
 		</div>
 	</body>
 </html>

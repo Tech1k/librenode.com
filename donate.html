@@ -18,47 +18,59 @@
 		<meta name="twitter:title" content="LibreNode - Donate"/>
 		<meta name="twitter:description" content="Support LibreNode"/>
 		<link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/navbar.css">
 	</head>
 	<body>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="assets/librenode.png" alt="Logo">
+            </a>
+
+            <!-- Very cheap method of getting this to work with css... -->
+            <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+
+            <!-- Hamburger icon -->
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Terms</a>
+                <a href="donate.html" id="curpage">Donate</a>
+                <a href="https://status.librenode.com">Status</a>
+            </div>
+        </nav>
 		<div id="main">
-			<center id="title">
-				<a href="index.html" style="text-decoration: none">
-					<img src="assets/librenode.png" style="max-width: 100%;">
-				</a>
-				<a href="index.html" id="navlink">Home</a>
-				<a href="services.html" id="navlink">Services</a>
-				<a href="contact.html"id="navlink">Contact</a>
-				<a href="terms.html"id="navlink">Terms</a>
-				<a href="donate.html" id="navlink">Donate</a>
-				<a href="https://status.librenode.com">Status</a>
-			</center>
+			<h1>Donate</h1>
 			<div>
-				<h2>Donate</h2>
-				<div>
-				<p>
-					I truly appreciate your generosity! Our services will always remain free and privacy-focused. If you'd like to help contribute towards covering our server costs and upkeep, you can do so using the Monero, Litecoin, or Bitcoin addresses below:
+			<p>
+				I truly appreciate your generosity! Our services will always remain free and privacy-focused. If you'd like to help contribute towards covering our server costs and upkeep, you can do so using the Monero, Litecoin, or Bitcoin addresses below:
+				<br/>
+
+				<div style="margin-top: 20px;">
+					<img src="assets/monero.png" width="28px" style="margin-right: 3px; vertical-align: middle;"><b>Monero (XMR):</b>
 					<br/>
+					<label style="word-break: break-word;">44mBGkMLThZi7GSmMWGSnnS79pKm6HDfPMUo5s9MRjeN7jcD3NPjRFk5Uboz951WULcVuWgLPeacP91M6iF8MNzF5o3F3bJ</label>
+				</div>
 
-					<div style="margin-top: 20px;">
-						<img src="assets/monero.png" width="28px" style="margin-right: 3px; vertical-align: middle;"><b>Monero (XMR):</b>
-						<br/>
-						<label style="word-break: break-word;">44mBGkMLThZi7GSmMWGSnnS79pKm6HDfPMUo5s9MRjeN7jcD3NPjRFk5Uboz951WULcVuWgLPeacP91M6iF8MNzF5o3F3bJ</label>
-					</div>
-
-					<div style="margin-top: 20px;">
-						<img src="assets/litecoin.png" width="28px" style="margin-right: 3px; vertical-align: middle;"><b>Litecoin (LTC):</b>
-						<br/>
-						<label style="word-break: break-word;">LXigMwv7ATnPWqtC6iCQqcthnVSeyidcy4</label>
-					</div>
-
-					<div style="margin-top: 20px;">
-						<img src="assets/bitcoin.png" width="28px" style="margin-right: 3px; vertical-align: middle;"><b>Bitcoin (BTC):</b>
-						<br/>
-						<label style="word-break: break-word;">bc1qp77wwq2stfpqyac7rzyq24umqhp3sq200fdtja</label>
-					</div>
+				<div style="margin-top: 20px;">
+					<img src="assets/litecoin.png" width="28px" style="margin-right: 3px; vertical-align: middle;"><b>Litecoin (LTC):</b>
 					<br/>
-				</p>
-			</div>
+					<label style="word-break: break-word;">LXigMwv7ATnPWqtC6iCQqcthnVSeyidcy4</label>
+				</div>
+
+				<div style="margin-top: 20px;">
+					<img src="assets/bitcoin.png" width="28px" style="margin-right: 3px; vertical-align: middle;"><b>Bitcoin (BTC):</b>
+					<br/>
+					<label style="word-break: break-word;">bc1qp77wwq2stfpqyac7rzyq24umqhp3sq200fdtja</label>
+				</div>
+				<br/>
+			</p>
 		</div>
 	</body>
 </html>

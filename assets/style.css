@@ -1,4 +1,20 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Italic';
+  src: url('/assets/fonts/inter-italic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 body {
+	font-family: 'Inter', sans-serif !important;
 	color: whitesmoke;
 	background: #333333;
 }
@@ -13,7 +29,7 @@ a:visited {
 
 #main {
 	margin: auto;
-	width: 50%;
+	width: 65%;
 }
 
 #navlink {
@@ -21,9 +37,9 @@ a:visited {
 	font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	#main {
-		width: 75%;
+		width: 85%;
 	}
 	#navlink {
 		margin-right: auto;

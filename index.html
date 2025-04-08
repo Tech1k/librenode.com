@@ -19,25 +19,39 @@
         <meta name="twitter:title" content="LibreNode - Home"/>
         <meta name="twitter:description" content="LibreNode.com is a gateway to privacy-respecting tools and services."/>
 		<link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/navbar.css">
 	</head>
 	<body>
-		<div id="main">
-			<center id="title">
-				<a href="index.html" style="text-decoration: none">
-					<img src="assets/librenode.png" style="max-width: 100%;">
-				</a>
-                <a href="index.html" id="navlink">Home</a>
-                <a href="services.html" id="navlink">Services</a>
-                <a href="contact.html"id="navlink">Contact</a>
-                <a href="terms.html"id="navlink">Terms</a>
-                <a href="donate.html" id="navlink">Donate</a>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="assets/librenode.png" alt="Logo">
+            </a>
+
+            <!-- Very cheap method of getting this to work with css... -->
+            <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+
+            <!-- Hamburger icon -->
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <div class="nav-links">
+                <a href="index.html" id="curpage">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Terms</a>
+                <a href="donate.html">Donate</a>
                 <a href="https://status.librenode.com">Status</a>
-            </center>
+            </div>
+        </nav>
+		<div id="main">
 			<div>
 				<!--<h2>Home</h2-->
 				<div>
                     <p>
-                        <h2>Welcome to LibreNode!</h2>
+                        <h1>Welcome to LibreNode!</h1>
 						LibreNode hosts privacy-respecting services and useful tools. We hope you find these services helpful. If you have any issues or suggestions for new services, please don't hesitate to contact us <a href="contact.html">here</a>.
 						<h2 style="margin-top: 25px;">Why was LibreNode created and who runs it?</h2>
 						LibreNode was launched on March 17, 2025 as a passion project by <a href="https://tech1k.com">Tech1k</a>, built to give back to the community. With years of experience in computing and programming, Tech1k created this platform to provide free tools and privacy-focused services for those who need them while supporting the open-source community.
