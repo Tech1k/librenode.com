@@ -117,8 +117,8 @@ $peerCount = $cachedData['peerCount'];
         <meta name="robots" content="index, nofollow">
         <meta name="author" content="Tech1k">
         <title>LibreNode - LTC Electrum Server</title>
-        <link rel="shortcut icon" href="assets/favicon.png"/>
-		<link rel="stylesheet" href="assets/style.css">
+        <link rel="shortcut icon" href="assets/favicon.png?v=2"/>
+		<link rel="stylesheet" href="assets/style.css?v=2">
 	</head>
 	<body>
 		<div id="main">
