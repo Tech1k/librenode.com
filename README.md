@@ -1,3 +1,3 @@
-## ltc.LibreNode.com
+## ltc.librenode.com
 
-This branch contains the files for the ltc.LibreNode.com website.
+This branch contains the files for the ltc.librenode.com website.
