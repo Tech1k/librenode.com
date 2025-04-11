@@ -1,3 +1,3 @@
-## xmr.LibreNode.com
+## xmr.librenode.com
 
-This branch contains the files for the xmr.LibreNode.com website.
+This branch contains the files for the xmr.librenode.com website.
