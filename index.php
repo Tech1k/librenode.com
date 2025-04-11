@@ -113,26 +113,26 @@ $peerCount = $cachedData['peerCount'];
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#5271ff">
-        <link rel="canonical" href="https://ltc.librenode.com"/>
+        <link rel="canonical" href="https://btc.librenode.com"/>
         <meta name="robots" content="index, nofollow">
         <meta name="author" content="Tech1k">
-        <title>LibreNode - LTC Electrum Server</title>
+        <title>LibreNode - BTC Electrum Server</title>
         <link rel="shortcut icon" href="assets/favicon.png?v=2"/>
 		<link rel="stylesheet" href="assets/style.css?v=2">
 	</head>
 	<body>
 		<div id="main">
             <center>
-				<img src="assets/libreltc.png" style="max-width: 100%;">
+				<img src="assets/librebtc.png" style="max-width: 100%;">
             </center>
-            <h2>LibreNode Litecoin Electrum Server</h2>
+            <h2>LibreNode Bitcoin Electrum Server</h2>
             <p>
-                This Litecoin Fulcrum Electrum Server is hosted by <a href="https://librenode.com">LibreNode</a> and is free to use via SSL, TCP, WSS, or Tor. SSL is the preferred method of connection for most wallets.
+                This Bitcoin Fulcrum Electrum Server is hosted by <a href="https://librenode.com">LibreNode</a> and is free to use via SSL, TCP, WSS, or Tor. SSL is the preferred method of connection for most wallets.
                 <br/><br/>
                 <strong>While we are committed to not logging your activity, we strongly encourage you to host your own Electrum server whenever possible to enhance your privacy.</strong>
                 <p>
-                    <ul><b>Ports:</b> <code>60002 (SSL), 60001 (TCP), 60004 (WSS)</code></ul>
-                    <ul><img src="assets/web.png" width="25px" style="margin-right: 3px; vertical-align: middle;"><b>Clearnet:</b> <code>ltc.librenode.com</code></ul>
+                    <ul><b>Ports:</b> <code>50002 (SSL), 50001 (TCP), 50004 (WSS)</code></ul>
+                    <ul><img src="assets/web.png" width="25px" style="margin-right: 3px; vertical-align: middle;"><b>Clearnet:</b> <code>btc.librenode.com</code></ul>
                     <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code>gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion</code></ul>
                 </p>
                 <h2>Server Info</h2>
