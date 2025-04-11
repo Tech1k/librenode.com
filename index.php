@@ -33,7 +33,7 @@ $refreshPeer    = ($now - $cachedData['timestamps']['peerCount']) > $peerCacheTi
 
 if ($refreshVersion || $refreshBlock || $refreshPeer) {
     $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
-    socket_connect($socket, "localhost", 60001);
+    socket_connect($socket, "localhost", 50001);
 }
 
 // Server version
