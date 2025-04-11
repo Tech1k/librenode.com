@@ -126,9 +126,9 @@ function getMoneroDaemonInfo() {
                     <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px;">Tor: <code>gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion:18089</code></ul>
                 </p>
                 <h2>Node Info</h2>
-                <ul><b>Block height:</b> <code><?php echo $blockCount ?></code></ul>
-                <ul><b>Synchronized:</b> <code><?php echo $synchronized ?></code></ul>
-                <ul><b>DB Size:</b> <code><?php echo $databaseSize . " GB" ?></code></ul>
+                <ul><b>Block height:</b> <code><?php echo $blockCount; ?></code></ul>
+                <ul><b>Synchronized:</b> <code><?php echo $synchronized; ?></code></ul>
+                <ul><b>DB Size:</b> <code><?php echo $databaseSize . " GB"; ?></code></ul>
                 <br/>
             </p>
 		</div>
