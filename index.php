@@ -136,9 +136,9 @@ $peerCount = $cachedData['peerCount'];
                     <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code>gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion</code></ul>
                 </p>
                 <h2>Server Info</h2>
-                    <ul><b>Server version:</b> <?php echo $serverVersion; ?></ul>
-                    <ul><b>Block height:</b> <?php echo $blockCount; ?></ul>
-                    <ul><b>Server peers:</b> <?php echo $peerCount; ?></ul>
+                    <ul><b>Server version:</b> <code><?php echo $serverVersion; ?></code></ul>
+                    <ul><b>Block height:</b> <code><?php echo $blockCount; ?></code></ul>
+                    <ul><b>Server peers:</b> <code><?php echo $peerCount; ?></code></ul>
                 <br/>
             </p>
 		</div>
