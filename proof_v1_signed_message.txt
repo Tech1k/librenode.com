@@ -1,0 +1,29 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+LibreNode Official Proof of Record Verification
+
+Version: 1
+Domain: librenode.com
+Contact Email: contact@librenode.com
+IPFS CID: bafyreibimfexv6sv6gfyispew2iakyz6olbfudjxrdggasx7vxlnp7oium
+Bitcoin TXID: d2fcebd0e375a8c765d008edfe87d434642ee6c6d2822335bc9a5a8fa297824e
+Bitcoin Block Height: 892138
+Previous TXID: none
+Previous CID: none
+
+SHA256 checksum of proof_v1.json: 2439f82ad16254f50c18f60e079b1d0e2c487bebd47e77d312bcdd10075b62d0
+
+The IPFS CID above is embedded in the Bitcoin transaction via OP_RETURN.
+
+This message confirms the authenticity of the referenced CID and transaction.
+It has been verified and signed using the PGP key for librenode.com (Fingerprint: A418 1FE4 DBC7 CA2C 8F95 8016 75F4 BEA3 7987 9CC5).
+
+Published at: librenode.com/proofs
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSp8GXc91yaVddq7Rx8MfIzWVLdrAUCZ/sZygAKCRB8MfIzWVLd
+rAKDAQDP5QVuSwgGgLfC+Df5OmOqOwrkc+9M+F8qnCSqM0/8EwEA+Z4XjfYREUZA
+2wHynrl59AtvAUmwJhxWNaQbW2CBswk=
+=iiId
+-----END PGP SIGNATURE-----

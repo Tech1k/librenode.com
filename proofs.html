@@ -1,0 +1,74 @@
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#5271ff">
+        <link rel="canonical" href="https://librenode.com/proofs"/>
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Tech1k">
+        <title>LibreNode - Proof of Verifiability</title>
+        <link rel="shortcut icon" href="assets/favicon.png"/>
+        <meta property="og:title" content="LibreNode - Proof of Verifiability"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://librenode.com"/>
+        <meta property="og:site_name" content="LibreNode"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content="LibreNode - Proof of Verifiability"/>
+		<link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/navbar.css">
+	</head>
+	<body>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="assets/librenode.png" alt="Logo">
+            </a>
+
+            <!-- Very cheap method of getting this to work with css... -->
+            <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+
+            <!-- Hamburger icon -->
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" id="curpage">Contact</a>
+                <a href="terms.html">Terms</a>
+                <a href="donate.html">Donate</a>
+                <a href="https://status.librenode.com">Status</a>
+            </div>
+        </nav>
+		<div id="main">
+            <h1>Proof of Verifiability</h1>
+            <div>
+                <p>This page provides verifiable proof of authenticity for contact and service data associated with librenode.com. The proof includes:</p>
+                <ul>
+                    <li>A unique IPFS CID containing the signed verification record</li>
+                    <li>A Bitcoin transaction embedding that CID using OP_RETURN</li>
+                    <li>A PGP signature from the official LibreNode key confirming the data's integrity</li>
+                </ul>
+
+                <h2>Verification Details</h2>
+                <ul><b>IPFS CID:</b> <code>bafyreibimfexv6sv6gfyispew2iakyz6olbfudjxrdggasx7vxlnp7oium</code></ul>
+                <ul><b>Bitcoin TXID:</b> <code>d2fcebd0e375a8c765d008edfe87d434642ee6c6d2822335bc9a5a8fa297824e</code></ul>
+                <ul><b>Bitcoin Block Height:</b> <code>892138</code></ul>
+                <ul><b>PGP Fingerprint:</b> <a href="librenode.asc"><code>A418 1FE4 DBC7 CA2C 8F95 8016 75F4 BEA3 7987 9CC5</code></a></ul>
+
+                <h2>Current Proofs</h2>
+                <p>This page is part of an ongoing transparency manifest for librenode.com.</p>
+                <ul>
+                    <li>Minor updates (e.g., contact info or metadata) will increment the minor version (e.g., v1.1, v1.2, etc.)</li>
+                    <li>Major updates (e.g., a new PGP key or project deprecation) will result in a new canonical version (e.g., v2) with a new IPFS CID and Bitcoin anchor</li>
+                </ul>
+                <p>All signed messages and raw proofs will be available below to allow full verification and traceability.</p>
+                <ul><b>Current proof manifest (json):</b> <a href="proof_v1.json"><code>proof_v1.json</code></a></ul>
+                <ul><b>PGP-signed verification message:</b> <a href="proof_v1_signed_message.txt"><code>proof_v1_signed_message.txt</code></ul>
+                <br/>
+            </div>
+		</div>
+	</body>
+</html>
