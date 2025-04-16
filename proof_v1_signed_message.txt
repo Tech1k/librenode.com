@@ -22,8 +22,8 @@ It has been verified and signed using the PGP key for librenode.com (Fingerprint
 Published at: librenode.com/proofs
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQSp8GXc91yaVddq7Rx8MfIzWVLdrAUCZ/sZygAKCRB8MfIzWVLd
-rAKDAQDP5QVuSwgGgLfC+Df5OmOqOwrkc+9M+F8qnCSqM0/8EwEA+Z4XjfYREUZA
-2wHynrl59AtvAUmwJhxWNaQbW2CBswk=
-=iiId
+iHUEARYKAB0WIQSkGB/k28fKLI+VgBZ19L6jeYecxQUCZ/9gQwAKCRB19L6jeYec
+xXqRAP9lMIhoriWQL9GyVCnVl1VR3mhbKYRjeRuVFMJkzYMAEwEAzPhHGlCs23NP
+yyVCnhUojY1aIIQxJLhpYeKJmS7nfAA=
+=IBMl
 -----END PGP SIGNATURE-----
