@@ -123,7 +123,7 @@ function getMoneroDaemonInfo() {
                 <strong>While we are committed to not logging your activity, we strongly encourage you to host your own Monero node whenever possible to enhance your privacy.</strong>
                 <p>
                     <ul><img src="assets/web.png" width="25px" style="margin-right: 3px;">Clearnet: <code>xmr.librenode.com:18089</code></ul>
-                    <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px;">Tor: <code>gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion:18089</code></ul>
+                    <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px;">Tor: <code style="word-break: break-word;">gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion:18089</code></ul>
                 </p>
                 <h2>Node Info</h2>
                 <ul><b>Block height:</b> <code><?php echo $blockCount; ?></code></ul>
