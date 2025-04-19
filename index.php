@@ -133,7 +133,7 @@ $peerCount = $cachedData['peerCount'];
                 <p>
                     <ul><b>Ports:</b> <code>60002 (SSL), 60001 (TCP), 60004 (WSS)</code></ul>
                     <ul><img src="assets/web.png" width="25px" style="margin-right: 3px; vertical-align: middle;"><b>Clearnet:</b> <code>ltc.librenode.com</code></ul>
-                    <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code>gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion</code></ul>
+                    <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code style="word-break: break-word;">gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion</code></ul>
                 </p>
                 <h2>Server Info</h2>
                     <ul><b>Server version:</b> <code><?php echo $serverVersion; ?></code></ul>
