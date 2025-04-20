@@ -112,25 +112,26 @@ function getMoneroDaemonInfo() {
 		<link rel="stylesheet" href="assets/style.css?v=2">
 	</head>
 	<body>
-		<div id="main">
+    <div id="main">
             <center>
 				<img src="assets/librexmr.png" style="max-width: 100%;">
             </center>
-            <h2>Librenode Monero Node</h2>
+            <h2>LibreNode Monero Node</h2>
             <p>
-                This Monero full node is hosted by <a href="https://librenode.com">LibreNode</a> and is free to use over TCP/IP or via Tor.
+                This Monero full node is hosted by <a href="https://librenode.com">LibreNode</a> and is offered freely to the community. You can connect via TCP/IP or via Tor — ideally Tor for enhanced privacy.
                 <br/><br/>
-                <strong>While we are committed to not logging your activity, we strongly encourage you to host your own Monero node whenever possible to enhance your privacy.</strong>
-                <p>
-                    <ul><img src="assets/web.png" width="25px" style="margin-right: 3px;">Clearnet: <code>xmr.librenode.com:18089</code></ul>
-                    <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px;">Tor: <code style="word-break: break-word;">gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion:18089</code></ul>
-                </p>
-                <h2>Node Info</h2>
-                <ul><b>Block height:</b> <code><?php echo $blockCount; ?></code></ul>
-                <ul><b>Synchronized:</b> <code><?php echo $synchronized; ?></code></ul>
-                <ul><b>DB Size:</b> <code><?php echo $databaseSize . " GB"; ?></code></ul>
-                <br/>
+                This service relies on donations to help offset hosting costs. If you've found it useful, please consider <a href="https://librenode.com/donate">supporting us</a>.
+                <br/><br/>
+                While we are committed to not logging your activity, we strongly encourage you to run your own Monero node whenever possible to enhance your privacy.
             </p>
+            <h3>Connection Info</h3>
+            <ul><img src="assets/web.png" width="25px" style="margin-right: 3px; vertical-align: middle;"><b>Clearnet:</b> <code>xmr.librenode.com:18089</code></ul>
+            <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code style="word-break: break-word;">gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion:18089</code></ul>
+            <h3>Node Info</h3>
+            <ul><b>Block height:</b> <code><?php echo $blockCount; ?></code></ul>
+            <ul><b>Synchronized:</b> <code><?php echo $synchronized; ?></code></ul>
+            <ul><b>DB Size:</b> <code><?php echo $databaseSize . " GB"; ?></code></ul>
+            <br/>
 		</div>
 	</body>
 </html>
