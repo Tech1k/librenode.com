@@ -127,20 +127,21 @@ $peerCount = $cachedData['peerCount'];
             </center>
             <h2>LibreNode Bitcoin Electrum Server</h2>
             <p>
-                This Bitcoin Fulcrum Electrum Server is hosted by <a href="https://librenode.com">LibreNode</a> and is free to use via SSL, TCP, WSS, or Tor. SSL is the preferred method of connection for most wallets.
+                This Bitcoin Fulcrum Electrum Server is hosted by <a href="https://librenode.com">LibreNode</a> and is offered freely to the community. You can connect via SSL, TCP, WSS, or Tor — SSL is the recommended connection method for most wallets, ideally used over Tor for enhanced privacy.
                 <br/><br/>
-                <strong>While we are committed to not logging your activity, we strongly encourage you to host your own Electrum server whenever possible to enhance your privacy.</strong>
-                <p>
-                    <ul><b>Ports:</b> <code>50002 (SSL), 50001 (TCP), 50004 (WSS)</code></ul>
-                    <ul><img src="assets/web.png" width="25px" style="margin-right: 3px; vertical-align: middle;"><b>Clearnet:</b> <code>btc.librenode.com</code></ul>
-                    <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code style="word-break: break-word;">gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion</code></ul>
-                </p>
-                <h2>Server Info</h2>
-                    <ul><b>Server version:</b> <code><?php echo $serverVersion; ?></code></ul>
-                    <ul><b>Block height:</b> <code><?php echo $blockCount; ?></code></ul>
-                    <ul><b>Server peers:</b> <code><?php echo $peerCount; ?></code></ul>
-                <br/>
+                This service relies on donations to help offset hosting costs. If you've found it useful, please consider <a href="https://librenode.com/donate">supporting us</a>.
+                <br/><br/>
+                While we are committed to not logging your activity, we strongly encourage you to run your own Electrum server whenever possible to enhance your privacy.
             </p>
+            <h2>Connection Info</h2>
+            <ul><b>Ports:</b> <code>50002 (SSL), 50001 (TCP), 50004 (WSS)</code></ul>
+            <ul><img src="assets/web.png" width="25px" style="margin-right: 3px; vertical-align: middle;"><b>Clearnet:</b> <code>btc.librenode.com</code></ul>
+            <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code style="word-break: break-word;">gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion</code></ul>
+            <h2>Server Info</h2>
+            <ul><b>Server version:</b> <code><?php echo $serverVersion; ?></code></ul>
+            <ul><b>Block height:</b> <code><?php echo $blockCount; ?></code></ul>
+            <ul><b>Server peers:</b> <code><?php echo $peerCount; ?></code></ul>
+            <br/>
 		</div>
 	</body>
 </html>
