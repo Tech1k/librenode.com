@@ -117,13 +117,13 @@ $peerCount = $cachedData['peerCount'];
         <meta name="robots" content="index, nofollow">
         <meta name="author" content="Tech1k">
         <title>LibreNode - BTC Electrum Server</title>
-        <link rel="shortcut icon" href="assets/favicon.png?v=2"/>
-		<link rel="stylesheet" href="assets/style.css?v=2">
+        <link rel="shortcut icon" href="/assets/favicon.png?v=2"/>
+		<link rel="stylesheet" href="/assets/style.css?v=2">
 	</head>
 	<body>
 		<div id="main">
             <center>
-				<img src="assets/librebtc.png" style="max-width: 100%;">
+				<img src="/assets/librebtc.png" style="max-width: 100%;">
             </center>
             <h2>LibreNode Bitcoin Electrum Server</h2>
             <p>
@@ -135,9 +135,9 @@ $peerCount = $cachedData['peerCount'];
             </p>
             <h3>Connection Info</h3>
             <ul><b>Ports:</b> <code>50002 (SSL), 50001 (TCP), 50004 (WSS)</code></ul>
-            <ul><img src="assets/web.png" width="25px" style="margin-right: 3px; vertical-align: middle;"><b>Clearnet:</b> <code>btc.librenode.com</code></ul>
-            <ul><img src="assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code style="word-break: break-word;">gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion</code></ul>
-            <h3>Server Info</h3>
+            <ul><img src="/assets/web.png" width="25px" style="margin-right: 3px; vertical-align: middle;"><b>Clearnet:</b> <code>btc.librenode.com</code></ul>
+            <ul><img src="/assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code style="word-break: break-word;">gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion</code></ul>
+            <h3>Server Info (<a href="/dashboard">dashboard</a>)</h3>
             <ul><b>Server version:</b> <code><?php echo $serverVersion; ?></code></ul>
             <ul><b>Block height:</b> <code><?php echo $blockCount; ?></code></ul>
             <ul><b>Server peers:</b> <code><?php echo $peerCount; ?></code></ul>
