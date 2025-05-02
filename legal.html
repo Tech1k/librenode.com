@@ -1,0 +1,157 @@
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#5271ff">
+        <link rel="canonical" href="https://librenode.com/terms"/>
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="Terms and conditions for using LibreNode."/>
+        <meta name="author" content="Tech1k">
+        <title>LibreNode - Terms</title>
+        <link rel="shortcut icon" href="/assets/favicon.png"/>
+        <meta property="og:title" content="LibreNode - Terms"/>
+        <meta property="og:description" content="Terms and conditions for using LibreNode."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://librenode.com/terms"/>
+        <meta property="og:site_name" content="LibreNode"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content="LibreNode - Terms"/>
+        <meta name="twitter:description" content="Terms and conditions for using LibreNode."/>
+		<link rel="stylesheet" href="/assets/style.css?v=2">
+	</head>
+	<body>
+        <nav class="navbar">
+            <a href="/index.html">
+                <img src="/assets/librenode.png" alt="Logo">
+            </a>
+
+            <!-- Very cheap method of getting this to work with css... -->
+            <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+
+            <!-- Hamburger icon -->
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/legal.html" id="curpage">Legal</a>
+                <a href="/donate.html">Donate</a>
+                <a href="https://status.librenode.com">Status</a>
+            </div>
+        </nav>
+		<div id="main">
+            <h1>Directory</h1>
+            <li><a href="#terms">Terms of Use</a></li>
+            <li style="padding-top: 5px;"><a href="#privacy">Privacy Policy</a></li>
+            <br/>
+            <hr/>
+            <h1>Terms of Use</h1>
+            <section id="terms">
+            <b>Last Updated:</b> May 1, 2025
+            <br/>
+            <h2>1. Introduction</h2>
+            Welcome to LibreNode ("the Site"). This Site provides access to privacy-focused tools and services, including search frontends, networking tools, and self-hosted applications. By using the Site, you agree to the following terms and policies.
+            <br/>
+            <h2>2. Acceptable Use</h2>
+            By accessing or using the Site, you agree that you will not:
+            <br/>
+            - Use the services for any unlawful or malicious activities.
+            <br/>
+            - Attempt to gain unauthorized access to the Site's backend systems.
+            <br/>
+            - Abuse, overload, or disrupt the services provided.
+            <br/>
+            - Use automated tools (bots, scrapers) that degrade performance.
+            <br/>
+            <h2>3. Disclaimers & Liability</h2>
+            - The Site is provided "as is" without warranties of any kind.
+            <br/>
+            - We are not responsible for how you use the services provided.
+            <br/>
+            - We do not guarantee uptime, availability, or uninterrupted service.
+            <br/>
+            - We are not liable for any damages arising from your use of the Site.
+            <br/>
+            <h2>4. Changes to These Terms</h2>
+            We reserve the right to modify these terms and policies at any time. Updates will be posted on this page with a revised "Last Updated" date.
+            <br/>
+            <h2>5. Contact</h2>
+            If you have any questions, you can find our contact information at: <a href="https://librenode.com/contact">librenode.com/contact</a>
+            <br/><br/>
+            <b>By using this Site, you acknowledge and agree to these terms. If you do not agree, please discontinue use immediately.</b>
+            <br/><br/>
+            </section>
+            <hr/>
+            <section id="privacy">
+                <h1>Privacy Policy</h1>
+                <b>Last Updated:</b> May 1, 2025
+                <p>
+                    LibreNode provides access to privacy-focused tools and services, including search frontends, developer utilities, and cryptocurrency infrastructure.
+                </p>
+                <h2>1. What We Don't Do</h2>
+                We do not:
+                <br/>
+                <ul>
+                    <li>Collect or store IP addresses.</li>
+                    <li>Use cookies or tracking pixels.</li>
+                    <li>Use third-party analytics (like Google Analytics).</li>
+                    <li>Require account creation or personal details.</li>
+                    <li>Share or sell any data to third parties.</li>
+                </ul>
+                <h2>2. Services We Host</h2>
+                LibreNode provides access to the following self-hosted, privacy-focused services:
+                <ul>
+                    <li><b>Redlib</b> (Reddit frontend).</li>
+                    <li><b>SearXNG</b> (search engine frontend).</li>
+                    <li><b>PrivateBin</b> (encrypted pastebin).</li>
+                    <li><b>Stirling-PDF</b> (PDF utilities).</li>
+                    <li><b>IT-Tools</b> (developer tools).</li>
+                    <li><b>Mozhi</b> (translator).</li>
+                    <li><b>Bitcoin, Litecoin, and Monero nodes and services.</b></li>
+                </ul>
+                <p>
+                    Each of these services is operated independently and may process data strictly necessary for their functionality (e.g., search queries or pastes). We do not monitor, log, or associate these activities with any user.
+                    <br/>
+                    Refer to each project's upstream documentation for more details on their individual privacy models.
+                </p>
+                <h2>3. Web Server and Logging</h2>
+                To understand general usage patterns (like daily traffic volume or common referral sources), LibreNode uses a minimal logging configuration via the Nginx web server.
+                <br/>
+                We log only:
+                <ul>
+                    <li>Requested domain (<code>$host</code>)</li>
+                    <li>Timestamp</li>
+                    <li>Referring website (<code>$http_referer</code>, if present)</li>
+                </ul>
+                <b>Example Log Format:</b>
+                <br/>
+                <code>example.com [01/May/2025:12:30:00 +0000] https://referrer.site</code>
+                <br/><br/>
+                We do not log:
+                <ul>
+                    <li>IP addresses</li>
+                    <li>User agents</li>
+                    <li>Query parameters or full URLs</li>
+                    <li>Cookies or session data</li>
+                </ul>
+                Logs are rotated regularly and used only to observe aggregate usage trends.
+                <br/>
+                <h2>4. Data Retention</h2>
+                Minimal logs are retained for a limited time (typically no more than 30 days) for diagnostic or usage review purposes. They are not linked to individuals and are automatically deleted afterward.
+                <br/>
+                <h2>5. Contact</h2>
+                If you have questions about this privacy policy or LibreNode's operations, feel free to contact us via the contact page located at <a href="https://librenode.com/contact">librenode.com/contact</a>.
+                <h2>6. Changes</h2>
+                We may update this privacy policy occasionally to reflect new services or changes in our practices. The "Last Updated" date at the top will always show when the latest revision was made.
+            </section>
+            <br/>
+            <hr/>
+		</div>
+        <br/><br/><br/>
+	</body>
+</html>
