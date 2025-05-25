@@ -1,0 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: 5-25-2025
+
+Subject: Deprecation of LibreNode Bitcoin Services
+
+Hello LibreNode users,
+
+After weeks of consideration, I've decided to wind down LibreNode's Bitcoin services due to the following reasons:
+ - The Bitcoin Core development team is actively pushing for the removal of arbitrary OP_RETURN limits, which will significantly increase blockchain bloat and reduce the autonomy of node operators like myself.
+ - The chain is growing at an accelerated rate due to spam from Ordinals and inscriptions, causing excessive bandwidth usage and occasional downtime from mempool congestion.
+ - I considered switching to Bitcoin Knots for its stricter policies and user controls, but the majority of mining pools still follow Bitcoin Core's reference consensus rules or their own modified versions which renders any client-side mitigations from Knots ineffective, as they continue to mine blocks with excessive spam and OP_RETURN outputs.
+
+I may consider resuming Bitcoin services for LibreNode in the future if Bitcoin Core's development direction shifts toward reducing spam and preserving network efficiency.
+
+Sincerely,
+Tech1k
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSkGB/k28fKLI+VgBZ19L6jeYecxQUCaDNVAAAKCRB19L6jeYec
+xS6CAQC7CMYJzPudAKq4e++MN7/tu3EN+v+6gOcddkRR8ep3NAEAgQClEuoF7z/p
+/0OMqNU75ZmQWXxEo0Jup/GVXsLCjQ0=
+=Utbt
+-----END PGP SIGNATURE-----

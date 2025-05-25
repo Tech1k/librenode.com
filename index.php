@@ -1,113 +1,3 @@
-<?php
-$cacheFile = 'cache_data.json';
-
-$blockCacheTime = 300;     // 5 minutes
-$peerCacheTime = 600;      // 10 minutes
-$versionCacheTime = 3600;  // 1 hour
-
-$needSocket = false;
-
-// Load existing cache if it exists
-$cachedData = [
-    'serverVersion' => null,
-    'blockCount' => null,
-    'peerCount' => null,
-    'timestamps' => [
-        'serverVersion' => 0,
-        'blockCount' => 0,
-        'peerCount' => 0
-    ]
-];
-
-if (file_exists($cacheFile)) {
-    $decoded = json_decode(file_get_contents($cacheFile), true);
-    if (is_array($decoded)) {
-        $cachedData = array_merge($cachedData, $decoded);
-    }
-}
-
-$now = time();
-$refreshVersion = ($now - $cachedData['timestamps']['serverVersion']) > $versionCacheTime;
-$refreshBlock   = ($now - $cachedData['timestamps']['blockCount']) > $blockCacheTime;
-$refreshPeer    = ($now - $cachedData['timestamps']['peerCount']) > $peerCacheTime;
-
-if ($refreshVersion || $refreshBlock || $refreshPeer) {
-    $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
-    socket_connect($socket, "localhost", 50001);
-}
-
-// Server version
-if ($refreshVersion) {
-    $query = '{"id": "version", "method": "server.version", "params": []}';
-    socket_write($socket, $query . "\n");
-    $response = '';
-    while (($chunk = socket_read($socket, 2048, PHP_NORMAL_READ)) !== false) {
-        $response .= $chunk;
-        if (strpos($chunk, "\n") !== false) break;
-    }
-    $result = json_decode($response, true);
-    if (isset($result['result'][0])) {
-        $cachedData['serverVersion'] = $result['result'][0];
-        $cachedData['timestamps']['serverVersion'] = $now;
-    } else {
-        $cachedData['serverVersion'] = "Error, failed to get server version";
-    }
-}
-
-// Block count
-if ($refreshBlock) {
-    $query = '{"id": "blk", "method": "blockchain.headers.subscribe", "params": []}';
-    socket_write($socket, $query . "\n");
-    $response = '';
-    while (($chunk = socket_read($socket, 2048, PHP_NORMAL_READ)) !== false) {
-        $response .= $chunk;
-        if (strpos($chunk, "\n") !== false) break;
-    }
-    $result = json_decode($response, true);
-    if (isset($result['result']['height'])) {
-        $cachedData['blockCount'] = $result['result']['height'];
-        $cachedData['timestamps']['blockCount'] = $now;
-    } else {
-        $cachedData['blockCount'] = "Error, failed to get block count";
-    }
-}
-
-// Peer count
-if ($refreshPeer) {
-    $query = '{"id": "peers", "method": "server.peers.subscribe", "params": []}';
-    socket_write($socket, $query . "\n");
-    $response = '';
-    while (($chunk = socket_read($socket, 2048, PHP_NORMAL_READ)) !== false) {
-        $response .= $chunk;
-        if (strpos($chunk, "\n") !== false) break;
-    }
-    $result = json_decode($response, true);
-    if (isset($result['result']) && is_array($result['result'])) {
-        $cachedData['peerCount'] = count($result['result']);
-        $cachedData['timestamps']['peerCount'] = $now;
-    } else {
-        $cachedData['peerCount'] = "Error, failed to get peer count";
-    }
-}
-
-if ($refreshVersion || $refreshBlock || $refreshPeer) {
-    file_put_contents($cacheFile, json_encode($cachedData));
-    if (isset($socket)) socket_close($socket);
-    //echo "Updated data:\n";
-} else {
-    //echo "Using cached data:\n";
-}
-
-//echo "Server version: " . $cachedData['serverVersion'] . "\n";
-//echo "Block count: " . $cachedData['blockCount'] . "\n";
-//echo "Peer count: " . $cachedData['peerCount'] . "\n";
-
-$serverVersion = $cachedData['serverVersion'];
-$blockCount = $cachedData['blockCount'];
-$peerCount = $cachedData['peerCount'];
-?>
-
-
 <!DOCTYPE html>
 	<head>
         <meta charset="UTF-8">
@@ -116,7 +6,7 @@ $peerCount = $cachedData['peerCount'];
         <link rel="canonical" href="https://btc.librenode.com"/>
         <meta name="robots" content="index, nofollow">
         <meta name="author" content="Tech1k">
-        <title>LibreNode - BTC Electrum Server</title>
+        <title>LibreNode - Bitcoin Service Deprecation Notice</title>
         <link rel="shortcut icon" href="/assets/favicon.png?v=2"/>
 		<link rel="stylesheet" href="/assets/style.css?v=2">
 	</head>
@@ -125,23 +15,50 @@ $peerCount = $cachedData['peerCount'];
             <center>
 				<img src="/assets/librebtc.png" style="max-width: 100%;">
             </center>
-            <h2>LibreNode Bitcoin Electrum Server</h2>
-            <p>
-                This Bitcoin Fulcrum Electrum Server is hosted by <a href="https://librenode.com">LibreNode</a> and is offered freely to the community. You can connect via SSL, TCP, WSS, or Tor — SSL is the recommended connection method for most wallets, ideally used over Tor for enhanced privacy.
+            <h2>LibreNode Bitcoin Service Deprecation Notice</h2>
+            <code>
+                -----BEGIN PGP SIGNED MESSAGE-----
+                <br/>
+                Hash: SHA512
                 <br/><br/>
-                This service relies on donations to help offset hosting costs. If you've found it useful, please consider <a href="https://librenode.com/donate">supporting us</a>.
+                Date: 5-25-2025
                 <br/><br/>
-                While we are committed to not logging your activity, we strongly encourage you to run your own Electrum server whenever possible to enhance your privacy.
-            </p>
-            <h3>Connection Info</h3>
-            <ul><b>Ports:</b> <code>50002 (SSL), 50001 (TCP), 50004 (WSS)</code></ul>
-            <ul><img src="/assets/web.png" width="25px" style="margin-right: 3px; vertical-align: middle;"><b>Clearnet:</b> <code>btc.librenode.com</code></ul>
-            <ul><img src="/assets/tor.png" width="24px" style="margin-right: 3px; vertical-align: middle;"><b>Tor:</b> <code style="word-break: break-word;">gw3ennwsaonltfox7z3rhhof6mxcq2fnwhcj2qyp3kxsfldnxix5b4yd.onion</code></ul>
-            <h3>Server Info (<a href="/dashboard">dashboard</a>)</h3>
-            <ul><b>Server version:</b> <code><?php echo $serverVersion; ?></code></ul>
-            <ul><b>Block height:</b> <code><?php echo $blockCount; ?></code></ul>
-            <ul><b>Server peers:</b> <code><?php echo $peerCount; ?></code></ul>
+                Subject: Deprecation of LibreNode Bitcoin Services
+                <br/><br/>
+                Hello LibreNode users,
+                <br/><br/>
+                After weeks of consideration, I've decided to wind down LibreNode's Bitcoin services due to the following reasons:
+                <br/>
+                &nbsp;- The Bitcoin Core development team is actively pushing for the removal of arbitrary OP_RETURN limits, which will significantly increase blockchain bloat and reduce the autonomy of node operators like myself.
+                <br/>
+                &nbsp;- The chain is growing at an accelerated rate due to spam from Ordinals and inscriptions, causing excessive bandwidth usage and occasional downtime from mempool congestion.
+                <br/>
+                &nbsp;- I considered switching to Bitcoin Knots for its stricter policies and user controls, but the majority of mining pools still follow Bitcoin Core's reference consensus rules or their own modified versions which renders any client-side mitigations from Knots ineffective, as they continue to mine blocks with excessive spam and OP_RETURN outputs.
+                <br/><br/>
+                I may consider resuming Bitcoin services for LibreNode in the future if Bitcoin Core's development direction shifts toward reducing spam and preserving network efficiency.
+                <br/><br/>
+                Sincerely,
+                <br/>
+                Tech1k
+                <br/>
+                -----BEGIN PGP SIGNATURE-----
+                <br/><br/>
+                iHUEARYKAB0WIQSkGB/k28fKLI+VgBZ19L6jeYecxQUCaDNVAAAKCRB19L6jeYec
+                <br/>
+                xS6CAQC7CMYJzPudAKq4e++MN7/tu3EN+v+6gOcddkRR8ep3NAEAgQClEuoF7z/p
+                <br/>
+                /0OMqNU75ZmQWXxEo0Jup/GVXsLCjQ0=
+                <br/>
+                =Utbt
+                <br/>
+                -----END PGP SIGNATURE-----
+            </code>
             <br/>
+            <h3>Resources</h3>
+            <ul><b>Raw message:</b> <a href="deprecation_message_signed.txt">deprecation_message_signed.txt</a></ul>
+            <ul><b>Inquiries:</b> <a href="https://librenode.com/contact">contact us</a></ul>
+            <ul><b>Bitnodes:</b> <a href="https://bitnodes.io/">bitnodes.io</a>, list of reachable public Bitcoin nodes</ul>
+            <br/><br/>
 		</div>
 	</body>
 </html>
