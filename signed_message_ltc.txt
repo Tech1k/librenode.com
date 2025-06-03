@@ -1,0 +1,29 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: 06-03-2025
+
+Subject: Deprecation of LibreNode Litecoin Services
+
+Hello LibreNode users,
+
+Following the earlier deprecation of our Bitcoin services, I've decided to also deprecate our Litecoin services. This decision comes after careful consideration of multiple factors:
+ - Electrum-LTC has not received meaningful updates in over three years.
+ - Maintaining a Fulcrum Electrum server for an unmaintained Electrum fork introduces unnecessary resource strain, especially given the recent wave of attacks targeting Electrum servers.
+ - The reliance on older, less secure protocols introduces a potential operational security (opsec) risk that is not justifiable.
+
+In my opinion, transparent blockchains such as Bitcoin and Litecoin offer only pseudonymity, not privacy. In an increasingly surveilled digital world, this no longer meets the gold standard for user protection.
+
+As a result, I will be shifting focus toward enhancing our Monero services on LibreNode to increase decentralization, privacy, and ease of access for users seeking true digital privacy.
+
+At this time, no other LibreNode services are slated for deprecation. This decision was made specifically to reduce attack surface and uphold the privacy standards that LibreNode was founded on.
+
+Sincerely,
+Tech1k
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSkGB/k28fKLI+VgBZ19L6jeYecxQUCaD83pwAKCRB19L6jeYec
+xaE3AQC35csImPitMuPjXinbr72ax8vMNIov9Uqm0USXgb2UswEApD6ln4gjfkmN
+iexbnr+ilNLmuOIdAvHaC8vGkE6ULwA=
+=km6/
+-----END PGP SIGNATURE-----
