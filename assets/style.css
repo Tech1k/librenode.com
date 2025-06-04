@@ -58,12 +58,10 @@ a:visited {
     max-height: 40px;
 }
 
-/* The css hamburger menu! */
 .menu-toggle {
     display: none;
 }
 
-/* The beloved hamburger icon...in css! */
 .hamburger {
     display: none;
     flex-direction: column;
