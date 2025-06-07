@@ -38,36 +38,110 @@
             </div>
         </nav>
 		<div id="main">
-            <h1>Proof of Verifiability</h1>
-            <div>
-                <p>This page provides verifiable proof of authenticity for contact and service data associated with librenode.com. The proof includes:</p>
-                <ul>
-                    <li>A unique IPFS CID containing the signed verification record</li>
-                    <li>A Bitcoin transaction embedding that CID using OP_RETURN</li>
-                    <li>A PGP signature from the official LibreNode key confirming the data's integrity</li>
-                </ul>
-
-                <h2>Verification Details</h2>
-                <ul><b>IPFS CID:</b> <code style="word-break: break-word;">bafyreibimfexv6sv6gfyispew2iakyz6olbfudjxrdggasx7vxlnp7oium</code> (<a href="https://ipfs.io/ipfs/bafyreibimfexv6sv6gfyispew2iakyz6olbfudjxrdggasx7vxlnp7oium/" target="_blank" rel="noopener">view on IPFS.io gateway</a>)</ul>
-                <ul><b>Bitcoin TXID:</b> <code style="word-break: break-word;">d2fcebd0e375a8c765d008edfe87d434642ee6c6d2822335bc9a5a8fa297824e</code></ul>
-                <ul><b>Bitcoin Block Height:</b> <code>892138</code></ul>
-                <ul><b>PGP Fingerprint:</b> <a href="/librenode.asc"><code>A418 1FE4 DBC7 CA2C 8F95 8016 75F4 BEA3 7987 9CC5</code></a></ul>
-
-                <h2>Current Proofs</h2>
-                <p>This page is part of an ongoing transparency manifest for librenode.com.</p>
-                <ul>
-                    <li>Minor updates (e.g., contact info or metadata) will increment the minor version (e.g., v1.1, v1.2, etc.)</li>
-                    <li>Major updates (e.g., a new PGP key or project deprecation) will result in a new canonical version (e.g., v2) with a new IPFS CID and Bitcoin anchor</li>
-                </ul>
-                <p>All signed messages and raw proofs will be available below to allow full verification and traceability.</p>
-                <ul><b>Current proof manifest (json):</b> <a href="/proof_v1.json"><code>proof_v1.json</code></a></ul>
-                <ul><b>PGP-signed verification message:</b> <a href="/proof_v1_signed_message.txt"><code>proof_v1_signed_message.txt</code></a></ul>
+            <h1>Proof of Verifiability (Deprecated)</h1>
+            <code>
+                -----BEGIN PGP SIGNED MESSAGE-----<br/>
+                Hash: SHA512
+                <br/><br/>
+                Date: 06-06-2025
+                <br/><br/>
+                Subject: Deprecation of Bitcoin-based Verifiability Proofs
+                <br/><br/>
+                I originally created this overengineered proofs page to act as a form of warrant canary, but primarily to provide verification of our PGP key and contact information. I've decided to deprecate this page because Bitcoin no longer aligns with my values, and the page was excessive for what it provided.
+                <br/><br/>
+                Reasons for Deprecation:<br/>
+                - - Bitcoin no longer aligns with my principles of censorship resistance, decentralization, and minimalism.<br/>
+                - - Using the Bitcoin blockchain contradicts my stance against treating it as a data storage layer, especially for a project that does not require notarization guarantees.<br/>
+                - - Standardized trust mechanisms such as PGP and Git hashes already offer sufficient transparency and authenticity.
+                <br/><br/>
+                What Changes:<br/>
+                - - No further proofs will be issued via Bitcoin OP_RETURN.<br/>
+                - - The legacy proof files will remain temporarily accessible on librenode.com/proofs for a period of 30 days for archival purposes but are no longer authoritative.<br/>
+                - - PGP-signed messages and standardized trust systems will now serve as the primary method of integrity verification.
+                <br/><br/>
+                What Does Not Change:<br/>
+                - - The LibreNode PGP key remains valid and trusted.<br/>
+                - - All hosted services remain operational and unchanged.<br/>
+                - - This message is not a legal notice, takedown, or canary. It reflects a voluntary and philosophical evolution of our verification model.
+                <br/><br/>
+                Legacy References:<br/>
+                - - IPFS CID: bafyreibimfexv6sv6gfyispew2iakyz6olbfudjxrdggasx7vxlnp7oium<br/>
+                &nbsp;&nbsp;*May be removed at any time depending on the number of peers pinning it<br/>
+                - - Bitcoin TX (no longer endorsed): d2fcebd0e375a8c765d008edfe87d434642ee6c6d2822335bc9a5a8fa297824e<br/>
+                - - PGP Fingerprint: A418 1FE4 DBC7 CA2C 8F95 8016 75F4 BEA3 7987 9CC5
+                <br/><br/>
+                Sunset Timeline:<br/>
+                This page and its associated legacy proof files will be permanently removed on or after July 7, 2025.<br/>  
+                This is a planned and transparent removal, not the result of legal pressure, compromise, or coercion.
+                <br/><br/>
+                Going Forward:<br/>
+                LibreNode will continue to support strong cryptographic trust without relying on bloated or compromised infrastructure such as Bitcoin. We remain committed to transparency, decentralization, and user privacy.
+                <br/><br/>
+                This message has been signed with the official LibreNode PGP key.<br/>
+                -----BEGIN PGP SIGNATURE-----
+                <br/><br/>
+                iHUEARYKAB0WIQSkGB/k28fKLI+VgBZ19L6jeYecxQUCaEOZZAAKCRB19L6jeYec<br/>
+                xRVGAP0fvTF1Evjf+49r/EojcJFrItNpgRDTIKQKHqVK6sD/kQEArau8ws7Y57sH<br/>
+                A2UWeZKVsBxoq6xkzmlD2FDCOfp+zA0=<br/>
+                =mKLy<br/>
+                -----END PGP SIGNATURE-----                
+            </code>
+            <br/>
+            <hr/>
+            <h1>Proof Archives</h1>
+            <h3>proof_v1.json</h3>
+            <code>
+                {<br/>
+                    "version": 1,<br/>
+                    "domain": "librenode.com",<br/>
+                    "pgp_fingerprint": "A4181FE4DBC7CA2C8F95801675F4BEA379879CC5",<br/>
+                    "email": "contact@librenode.com",<br/>
+                    "proofs_page": "https://librenode.com/proofs",<br/>
+                    "signer": "LibreNode",<br/>
+                    "notice": "This is the official record of verification for librenode.com. Verify current proofs using the PGP fingerprint and the signed message at https://librenode.com/proofs.",<br/>
+                    "pgp_key_cid": "bafkreiacw4kahoze7jwyb64zn343qdgb3ieyx2yjahaffm6o3ztsuiiupm", <br/>
+                    "previous_cid": null,<br/>
+                    "previous_txid": null<br/>
+                }
+            </code>
+            <br/><br/>
+            <h3>proof_v1_signed_message.txt</h3>
+            <code>
+                -----BEGIN PGP SIGNED MESSAGE-----<br/>
+                Hash: SHA512
+                <br/><br/>
+                LibreNode Official Proof of Record Verification
+                <br/><br/>
+                Version: 1<br/>
+                Domain: librenode.com<br/>
+                Contact Email: contact@librenode.com<br/>
+                IPFS CID: bafyreibimfexv6sv6gfyispew2iakyz6olbfudjxrdggasx7vxlnp7oium<br/>
+                Bitcoin TXID: d2fcebd0e375a8c765d008edfe87d434642ee6c6d2822335bc9a5a8fa297824e<br/>
+                Bitcoin Block Height: 892138<br/>
+                Previous TXID: none<br/>
+                Previous CID: none
+                <br/><br/>
+                SHA256 checksum of proof_v1.json: 2439f82ad16254f50c18f60e079b1d0e2c487bebd47e77d312bcdd10075b62d0
+                <br/><br/>
+                The IPFS CID above is embedded in the Bitcoin transaction via OP_RETURN.
+                <br/><br/>
+                This message confirms the authenticity of the referenced CID and transaction.<br/>
+                It has been verified and signed using the PGP key for librenode.com (Fingerprint: A418 1FE4 DBC7 CA2C 8F95 8016 75F4 BEA3 7987 9CC5).<br/>
                 <br/>
-				<hr/>
-                <footer style="text-align:center; margin:1em 0;">
-                    <p>Serving freedom since March 17, 2025. Hosted with care by <a href="https://tech1k.com" target="_blank" rel="noopener">Tech1k</a>.</p>
-                </footer>
-            </div>
+                Published at: librenode.com/proofs<br/>
+                -----BEGIN PGP SIGNATURE-----
+                <br/><br/>
+                iHUEARYKAB0WIQSkGB/k28fKLI+VgBZ19L6jeYecxQUCZ/9gQwAKCRB19L6jeYec<br/>
+                xXqRAP9lMIhoriWQL9GyVCnVl1VR3mhbKYRjeRuVFMJkzYMAEwEAzPhHGlCs23NP<br/>
+                yyVCnhUojY1aIIQxJLhpYeKJmS7nfAA=<br/>
+                =IBMl<br/>
+                -----END PGP SIGNATURE-----     
+            </code>
+            <br/>
+            <hr/>
+            <footer style="text-align:center; margin:1em 0;">
+                <p>Serving freedom since March 17, 2025. Hosted with care by <a href="https://tech1k.com" target="_blank" rel="noopener">Tech1k</a>.</p>
+            </footer>
 		</div>
 	</body>
 </html>
