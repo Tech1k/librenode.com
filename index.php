@@ -120,8 +120,6 @@ function getMoneroDaemonInfo() {
             <p>
                 This Monero full node is hosted by <a href="https://librenode.com">LibreNode</a> and is offered freely to the community. You can connect via TCP/IP or via Tor — ideally Tor for enhanced privacy.
                 <br/><br/>
-                This service relies on donations to help offset hosting costs. If you've found it useful, please consider <a href="https://librenode.com/donate">supporting us</a>.
-                <br/><br/>
                 While we are committed to not logging your activity, we strongly encourage you to run your own Monero node whenever possible to enhance your privacy.
             </p>
             <h3>Connection Info</h3>
