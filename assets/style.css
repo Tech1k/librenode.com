@@ -20,6 +20,10 @@ a:visited {
     color: #80cbc4;
 }
 
+.service-icon {
+    border-radius: 6px;
+}
+
 #main {
 	margin: auto;
 	width: 65%;
