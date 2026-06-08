@@ -15,6 +15,8 @@
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://librenode.com/legal"/>
         <meta property="og:site_name" content="LibreNode"/>
+        <meta property="og:image" content="https://librenode.com/assets/favicon.png"/>
+        <meta name="twitter:image" content="https://librenode.com/assets/favicon.png"/>
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:title" content="LibreNode - Legal"/>
         <meta name="twitter:description" content="Terms of Use and Privacy Policy for LibreNode."/>
@@ -41,44 +43,39 @@
             </div>
         </nav>
 		<div id="main">
-            <h1>Directory</h1>
+            <h1>Legal</h1>
             <ul>
                 <li><a href="#terms">Terms of Use</a></li>
                 <li style="padding-top: 5px;"><a href="#privacy">Privacy Policy</a></li>
             </ul>
             <br/>
             <hr/>
-            <h1>Terms of Use</h1>
+            <h2>Terms of Use</h2>
             <section id="terms">
             <b>Last Updated:</b> May 1, 2025
             <br/>
-            <h2>1. Introduction</h2>
+            <h3>1. Introduction</h3>
             Welcome to LibreNode ("the Site"). This Site provides access to privacy-focused tools and services, including search frontends, networking tools, and self-hosted applications. By using the Site, you agree to the following terms and policies.
             <br/>
-            <h2>2. Acceptable Use</h2>
+            <h3>2. Acceptable Use</h3>
             By accessing or using the Site, you agree that you will not:
-            <br/>
-            - Use the services for any unlawful or malicious activities.
-            <br/>
-            - Attempt to gain unauthorized access to the Site's backend systems.
-            <br/>
-            - Abuse, overload, or disrupt the services provided.
-            <br/>
-            - Use automated tools (bots, scrapers) that degrade performance.
-            <br/>
-            <h2>3. Disclaimers & Liability</h2>
-            - The Site is provided "as is" without warranties of any kind.
-            <br/>
-            - We are not responsible for how you use the services provided.
-            <br/>
-            - We do not guarantee uptime, availability, or uninterrupted service.
-            <br/>
-            - We are not liable for any damages arising from your use of the Site.
-            <br/>
-            <h2>4. Changes to These Terms</h2>
+            <ul>
+                <li>Use the services for any unlawful or malicious activities.</li>
+                <li>Attempt to gain unauthorized access to the Site's backend systems.</li>
+                <li>Abuse, overload, or disrupt the services provided.</li>
+                <li>Use automated tools (bots, scrapers) that degrade performance.</li>
+            </ul>
+            <h3>3. Disclaimers & Liability</h3>
+            <ul>
+                <li>The Site is provided "as is" without warranties of any kind.</li>
+                <li>We are not responsible for how you use the services provided.</li>
+                <li>We do not guarantee uptime, availability, or uninterrupted service.</li>
+                <li>We are not liable for any damages arising from your use of the Site.</li>
+            </ul>
+            <h3>4. Changes to These Terms</h3>
             We reserve the right to modify these terms and policies at any time. Updates will be posted on this page with a revised "Last Updated" date.
             <br/>
-            <h2>5. Contact</h2>
+            <h3>5. Contact</h3>
             If you have any questions, you can find our contact information at: <a href="https://librenode.com/contact">librenode.com/contact</a>
             <br/><br/>
             <b>By using this Site, you acknowledge and agree to these terms. If you do not agree, please discontinue use immediately.</b>
@@ -86,12 +83,12 @@
             </section>
             <hr/>
             <section id="privacy">
-                <h1>Privacy Policy</h1>
-                <b>Last Updated:</b> May 1, 2025
+                <h2>Privacy Policy</h2>
+                <b>Last Updated:</b> June 8, 2026
                 <p>
                     LibreNode provides access to privacy-focused tools and services, including search frontends, translation, developer utilities, and in-browser document tools.
                 </p>
-                <h2>1. What We Don't Do</h2>
+                <h3>1. What We Don't Do</h3>
                 We do not:
                 <br/>
                 <ul>
@@ -101,7 +98,7 @@
                     <li>Require account creation or personal details.</li>
                     <li>Share or sell any data to third parties.</li>
                 </ul>
-                <h2>2. Services We Host</h2>
+                <h3>2. Services We Host</h3>
                 LibreNode provides access to the following self-hosted, privacy-focused services:
                 <ul>
                     <li><b>SearXNG</b> (search engine frontend).</li>
@@ -117,14 +114,14 @@
                     <br/>
                     Refer to each project's upstream documentation for more details on their individual privacy models.
                 </p>
-                <h2>3. Web Server and Logging</h2>
-                To understand general usage patterns (like daily traffic volume or common referral sources), LibreNode uses a minimal logging configuration via the Nginx web server.
+                <h3>3. Web Server and Logging</h3>
+                To understand general usage patterns (like daily traffic volume or common referral sources), LibreNode uses a minimal logging configuration via the Apache web server.
                 <br/>
                 We log only:
                 <ul>
-                    <li>Requested domain (<code>$host</code>)</li>
+                    <li>Requested domain (<code>%v</code>)</li>
                     <li>Timestamp</li>
-                    <li>Referring website (<code>$http_referer</code>, if present)</li>
+                    <li>Referring website (<code>%{Referer}i</code>, if present)</li>
                 </ul>
                 <b>Example Log Format:</b>
                 <br/>
@@ -139,12 +136,12 @@
                 </ul>
                 Logs are rotated regularly and used only to observe aggregate usage trends.
                 <br/>
-                <h2>4. Data Retention</h2>
+                <h3>4. Data Retention</h3>
                 Minimal logs are retained for a limited time (typically no more than 30 days) for diagnostic or usage review purposes. They are not linked to individuals and are automatically deleted afterward.
                 <br/>
-                <h2>5. Contact</h2>
+                <h3>5. Contact</h3>
                 If you have questions about this privacy policy or LibreNode's operations, feel free to contact us via the contact page located at <a href="https://librenode.com/contact">librenode.com/contact</a>.
-                <h2>6. Changes</h2>
+                <h3>6. Changes</h3>
                 We may update this privacy policy occasionally to reflect new services or changes in our practices. The "Last Updated" date at the top will always show when the latest revision was made.
             </section>
             <br/>
