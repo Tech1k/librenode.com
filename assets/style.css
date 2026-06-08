@@ -1,8 +1,9 @@
 @font-face {
   font-family: 'Inter';
-  src: url('/assets/fonts/inter.ttf') format('truetype');
+  src: url('/assets/fonts/inter.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -24,17 +25,12 @@ a:visited {
 	width: 65%;
 }
 
-#navlink {
-	margin-right: 10px;
-	font-size: 18px;
-}
-
 @media (max-width: 992px) {
 	#main {
 		width: 85%;
 	}
-	#navlink {
-		margin-right: auto;
+	.navbar {
+		width: 85%;
 	}
 }
 
@@ -93,11 +89,6 @@ a:visited {
         justify-content: space-between;
     }
 
-    .navbar-content {
-        width: 75%;
-        margin: 0 auto;
-    }
-
     .nav-links {
         display: flex;
         gap: 15px;
@@ -110,11 +101,6 @@ a:visited {
     .navbar {
         flex-direction: column;
         align-items: center;
-    }
-
-    .navbar-content {
-        width: 75%;
-        margin: 0 auto;
     }
 
     .nav-links {
